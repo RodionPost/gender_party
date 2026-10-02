@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffdfa">
+  <meta name="description" content="Приглашаем Вас разделить радость особенного момента и узнать, кого мы ждём — мальчика или девочку!">
+  <title>Мальчик или девочка? — Приглашение</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/MarckScript-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/CormorantGaramond.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background" aria-hidden="true">
+    <div class="wash wash--blue"></div>
+    <div class="wash wash--rose"></div>
+    <div class="wash wash--bottom"></div>
+    <img class="cloud cloud--left" src="assets/cloud.png" alt="" width="1792" height="864">
+    <img class="cloud cloud--right" src="assets/cloud.png" alt="" width="1792" height="864">
+    <img class="cloud cloud--bottom" src="assets/cloud.png" alt="" width="1792" height="864">
+  </div>
+  <main>
+  <section class="invitation" aria-labelledby="title">
+    <div class="illustration" aria-hidden="true">
+      <img class="balloons" src="assets/balloons.png" alt="" width="1536" height="1024" fetchpriority="high">
+    </div>
+    <div class="copy">
+      <p class="intro">Приглашаем Вас узнать,<br>кого мы ждём…</p>
+      <h1 id="title"><span>Мальчик</span> <span class="second-line"><span class="or">или</span> девочка?</span></h1>
+      <div class="ornament" aria-hidden="true"><span></span><i>♡</i><span></span></div>
+      <p class="message">Разделите с нами радость<br>этого особенного момента!</p>
+      <div class="occasion" aria-label="Дата и время праздника">
+        <p class="date">10.10.2026</p><span class="divider" aria-hidden="true"></span><p class="time">12:00</p>
+      </div>
+      <p class="location">База отдыха "Дикарка"</p>
+    </div>
+  </section>
+  <section class="details" aria-labelledby="details-title">
+    <h2 id="details-title">Несколько деталей</h2>
+    <div class="details-grid">
+      <article class="detail">
+        <span class="detail-number" aria-hidden="true">01</span>
+        <h3>Дресс-код</h3>
+        <p>Приходите в том, в чём вам комфортно — дресс-кода нет. А если хочется сделать свой прогноз, выбирайте розовый или голубой</p>
+      </article>
+      <article class="detail">
+        <span class="detail-number" aria-hidden="true">02</span>
+        <h3>О подарках</h3>
+        <p>На гендер-пати обычно приходят без подарков — главное для нас, чтобы вы были рядом! Но если вам хочется что-то подарить, будем рады. Для вдохновения можно заглянуть в <a class="venue-link" href="https://ozon.ru/t/fBtwiEJ" target="_blank" rel="noopener noreferrer">вишлист</a> Алёны, который она подготовила к рождению малыша.</p>
+      </article>
+      <article class="detail detail--venue">
+        <span class="detail-number" aria-hidden="true">03</span>
+        <h3>Место встречи</h3>
+        <p class="venue-name">База отдыха «Дикарка»</p>
+        <!-- Замените # в href на ссылку на карту. -->
+        <p class="venue-address"><a class="venue-link" href="https://yandex.ru/maps/-/CXaj566B" target="_blank" rel="noopener noreferrer">с.Измайловка, ул.Измайловская, 166А</a></p>
+        <div class="venue-gallery" aria-label="Фотографии базы отдыха «Дикарка»">
+          <a class="venue-photo venue-photo--wide" href="assets/bg1.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть фото домика и территории целиком">
+            <img src="assets/bg1.png" alt="Домик с террасой, зелёная лужайка и шезлонги" width="966" height="450" loading="lazy" decoding="async">
+          </a>
+          <a class="venue-photo" href="assets/photo.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть фото выхода на террасу целиком">
+            <img src="assets/photo.png" alt="Выход из домика на солнечную террасу со столиком" width="1023" height="1364" loading="lazy" decoding="async">
+          </a>
+          <a class="venue-photo" href="assets/card_3.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть фото площадки у домика целиком">
+            <img src="assets/card_3.png" alt="Волейбольная сетка на лужайке у деревянного домика среди деревьев" width="680" height="1023" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+  </main>
+</body>
+</html>
