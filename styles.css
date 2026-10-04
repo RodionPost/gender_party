@@ -54,11 +54,13 @@ h1>span{white-space:nowrap}
 .venue-link:hover{text-decoration-color:var(--ink)}
 .venue-link:focus-visible{outline:2px solid var(--rose);outline-offset:5px;border-radius:2px}
 
-/* Широкий снимок и пара вертикальных: адаптивный фотоальбом. */
+/* Адаптивный фотоальбом места проведения. */
 .venue-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:35px auto 0;max-width:740px}
-.venue-photo{display:block;min-width:0;aspect-ratio:4/5;padding:8px;background:#fff;border:1px solid #eee5e5;box-shadow:0 6px 20px #55433a0a;border-radius:3px;overflow:hidden}
+.venue-photo{display:block;min-width:0;aspect-ratio:3/2;padding:8px;background:#fff;border:1px solid #eee5e5;box-shadow:0 6px 20px #55433a0a;border-radius:3px;overflow:hidden}
 .venue-photo img{display:block;width:100%;height:100%;object-fit:cover;border-radius:1px}
-.venue-photo--wide{grid-column:1/-1;aspect-ratio:auto}
-.venue-photo--wide img{height:auto}
 .venue-photo:focus-visible{outline:2px solid var(--rose);outline-offset:5px}
 @media(max-width:560px){.venue-gallery{gap:12px;margin-top:27px}.venue-photo{padding:5px}}
+
+
+.detail--gifts{grid-column:1/-1}
+.detail--gifts p{max-width:680px;margin-inline:auto}
