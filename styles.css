@@ -64,3 +64,9 @@ h1>span{white-space:nowrap}
 
 .detail--gifts{grid-column:1/-1}
 .detail--gifts p{max-width:680px;margin-inline:auto}
+
+.wishlist-button{display:inline-block;max-width:100%;margin-top:24px;padding:12px 24px;border:1px solid var(--rose);border-radius:4px;background:#fff;color:var(--ink);font-size:20px;line-height:1.4;text-decoration:none;transition:background-color .2s,border-color .2s}
+.wishlist-button:hover{background:#fcf0f4;border-color:#ba7087}
+.wishlist-button:focus-visible{outline:2px solid var(--rose);outline-offset:4px}
+@media(max-width:560px){.wishlist-button{padding:12px 18px;font-size:19px}}
+@media(prefers-reduced-motion:reduce){.wishlist-button{transition:none}}
