@@ -531,26 +531,20 @@ h1>span {
 }
 
 .venue-photo {
-    --photo-padding: 8px;
-    position: relative;
     display: block;
     min-width: 0;
-    aspect-ratio: 3/2;
     padding: 8px;
     background: #fff;
     border: 1px solid #eee5e5;
     box-shadow: 0 6px 20px #55433a0a;
-    border-radius: 3px;
-    overflow: hidden
+    border-radius: 3px
 }
 
 .venue-photo img {
-    position: absolute;
-    top: var(--photo-padding);
-    left: var(--photo-padding);
     display: block;
-    width: calc(100% - 2 * var(--photo-padding));
-    height: calc(100% - 2 * var(--photo-padding));
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
     object-fit: cover;
     border-radius: 1px
 }
@@ -568,8 +562,7 @@ h1>span {
     }
 
     .venue-photo {
-        --photo-padding: 5px;
-        padding: 5px
+        padding: 8px
     }
 }
 
