@@ -5,7 +5,7 @@
 html{min-width:280px;background:var(--paper)}
 body{margin:0;position:relative;isolation:isolate;min-height:100svh;color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;overflow-x:clip;background:radial-gradient(ellipse at 50% 35%,#fff 0%,#fffdfa 75%)}
 body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:3;opacity:.13;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23000' opacity='.2' filter='url(%23n)' d='M0 0h180v180H0z'/%3E%3C/svg%3E")}
-.background{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
+.background{position:absolute;top:0;left:0;right:0;height:900px;overflow:hidden;pointer-events:none;z-index:-1}
 .wash{position:absolute;pointer-events:none;z-index:-1;width:clamp(210px,31vw,520px);height:clamp(240px,34vw,510px);filter:blur(14px);opacity:.52;border-radius:44% 56% 71% 29% / 54% 38% 62% 46%;background:radial-gradient(ellipse at 42% 40%,#dce8e9 0%,#e9eff0 40%,transparent 68%)}
 .wash--blue{left:-13%;top:-150px;transform:rotate(-20deg)}
 .wash--rose{right:-12%;top:130px;background:radial-gradient(ellipse at 48% 40%,#f2dfe4 0%,#f8ebed 42%,transparent 67%);transform:rotate(26deg)}
@@ -70,3 +70,6 @@ h1>span{white-space:nowrap}
 .wishlist-button:focus-visible{outline:2px solid var(--rose);outline-offset:4px}
 @media(max-width:560px){.wishlist-button{padding:12px 18px;font-size:19px}}
 @media(prefers-reduced-motion:reduce){.wishlist-button{transition:none}}
+
+/* Декор закреплён в начале страницы, а не на экране телефона. */
+@media(max-width:560px){.background{height:700px}.cloud--left{top:24px}.cloud--right{top:170px}.cloud--bottom,.wash--bottom{display:none}}
